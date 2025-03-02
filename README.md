@@ -26,6 +26,22 @@ cd CertRecon
 chmod +x CertRecon.sh
 ```
 
+## 🚀 Usage
+Run the script with a target domain:
+```
+./CertRecon.sh example.com
+```
+
+Example output:
+
+```
+[+] Fetching subdomains from crt.sh for example.com...
+[*] Checking HTTP status for found subdomains...
+[+] sub.example.com - Status: 200 (OK)
+[!] redirect.example.com - Status: 301 (Redirect)
+[-] offline.example.com - No response / Unreachable
+```
+
 ## 📜 License
 This project is licensed under the MIT License. Feel free to use, modify, and share.
 
